@@ -1,0 +1,124 @@
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--White);
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--DarkGrayishMagenta);
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+@media (min-width: 768px){
+    body{
+        margin-top: 5rem;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body p{
+        max-width: 400px;
+    }
+    .principal{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .subtitulo{
+        font-size: large;
+    }
+}
+
+/*Titulo*/
+h1{
+    color: var(--VeryDarkMagenta);
+
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+
+/*Puntuaciones*/
+.estrella{
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background-color: var(--LightGrayishMagenta);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.estrella svg{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+    .estrella{
+        margin-top: 3rem;
+        max-width: 20rem;
+        margin-bottom: -2rem;
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 0rem;
+    }
+    .segEst{
+        margin-left: 3rem;
+    }
+    .terEst{
+        margin-left: 6rem;
+    }
+}
+
+/*Opiniones*/
+.reseña{
+    color: var(--LightGrayishMagenta);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: var(--VeryDarkMagenta);
+    text-align: left;
+}
+
+@media (min-width: 768px){
+    .reseñas{
+        margin-top: 3rem;
+        display: flex;
+    }
+    .reseña{
+        margin-right: 2rem;
+        max-height: 9rem;
+        max-width: 15rem;
+
+    }
+    .segRes{
+        margin-top: 1rem;
+    }
+    .terRes{
+        margin-top: 2rem;
+    }
+}
+
+.usuario{
+    display: flex;
+    gap: 1rem;
+
+}
+.usuario span{
+    color: var(--SoftPink);
+}
+.usuario img{
+
+    max-height: 2rem;
+    max-width: 2rem;
+    border-radius: 10rem;
+}
